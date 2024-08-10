@@ -8,7 +8,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/odm/bin/fidoca:$(TARGET_COPY_OUT_ODM)/bin/fidoca \
     vendor/xiaomi/sm8550-common/proprietary/odm/bin/hw/vendor.xiaomi.hw.touchfeature@1.0-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.xiaomi.hw.touchfeature@1.0-service \
-    vendor/xiaomi/sm8550-common/proprietary/odm/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service \
     vendor/xiaomi/sm8550-common/proprietary/odm/bin/hw/vendor.xiaomi.sensor.communicate@1.0-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.xiaomi.sensor.communicate@1.0-service \
     vendor/xiaomi/sm8550-common/proprietary/odm/bin/mlipayd@1.1:$(TARGET_COPY_OUT_ODM)/bin/mlipayd@1.1 \
     vendor/xiaomi/sm8550-common/proprietary/odm/bin/mtd@1.3:$(TARGET_COPY_OUT_ODM)/bin/mtd@1.3 \
@@ -20,7 +19,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.tidaservice@1.2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.tidaservice@1.2-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc \
-    vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/vendor.xiaomi.sensor.communicate@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.sensor.communicate@1.0-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/izat_device.conf:$(TARGET_COPY_OUT_ODM)/etc/izat_device.conf \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
@@ -98,7 +96,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/odm/lib64/hw/consumerir.qcom.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/consumerir.qcom.so \
     vendor/xiaomi/sm8550-common/proprietary/odm/lib64/hw/displayfeature.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/displayfeature.default.so \
     vendor/xiaomi/sm8550-common/proprietary/odm/lib64/hw/vendor.xiaomi.hw.touchfeature@1.0-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/vendor.xiaomi.hw.touchfeature@1.0-impl.so \
-    vendor/xiaomi/sm8550-common/proprietary/odm/lib64/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so \
     vendor/xiaomi/sm8550-common/proprietary/odm/lib64/libMiDispDevManager.so:$(TARGET_COPY_OUT_ODM)/lib64/libMiDispDevManager.so \
     vendor/xiaomi/sm8550-common/proprietary/odm/lib64/libaudioroute_ext.so:$(TARGET_COPY_OUT_ODM)/lib64/libaudioroute_ext.so \
     vendor/xiaomi/sm8550-common/proprietary/odm/lib64/libclient2slpi.notifier.so:$(TARGET_COPY_OUT_ODM)/lib64/libclient2slpi.notifier.so \
@@ -126,7 +123,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/odm/lib64/libsdr2hdr.so:$(TARGET_COPY_OUT_ODM)/lib64/libsdr2hdr.so \
     vendor/xiaomi/sm8550-common/proprietary/odm/lib64/libsensor_cal@2.0.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_cal@2.0.so \
     vendor/xiaomi/sm8550-common/proprietary/odm/lib64/libsre.so:$(TARGET_COPY_OUT_ODM)/lib64/libsre.so \
-    vendor/xiaomi/sm8550-common/proprietary/odm/lib64/libssccalapi@2.0.so:$(TARGET_COPY_OUT_ODM)/lib64/libssccalapi@2.0.so \
     vendor/xiaomi/sm8550-common/proprietary/odm/lib64/libtida@1.2.so:$(TARGET_COPY_OUT_ODM)/lib64/libtida@1.2.so \
     vendor/xiaomi/sm8550-common/proprietary/odm/lib64/libtruetone.so:$(TARGET_COPY_OUT_ODM)/lib64/libtruetone.so \
     vendor/xiaomi/sm8550-common/proprietary/odm/lib64/libvideomode.so:$(TARGET_COPY_OUT_ODM)/lib64/libvideomode.so \
@@ -214,6 +210,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/system_ext/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtutils.so \
     vendor/xiaomi/sm8550-common/proprietary/system_ext/lib64/libavenhancements.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libavenhancements.so \
     vendor/xiaomi/sm8550-common/proprietary/system_ext/lib64/libdiag_system.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdiag_system.qti.so \
+    vendor/xiaomi/sm8550-common/proprietary/system_ext/lib64/libdiag_system.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdiag_system.qti.so \
+    vendor/xiaomi/sm8550-common/proprietary/system_ext/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdiag_system.so \
     vendor/xiaomi/sm8550-common/proprietary/system_ext/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdiag_system.so \
     vendor/xiaomi/sm8550-common/proprietary/system_ext/lib64/libdpmctmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmctmgr.so \
     vendor/xiaomi/sm8550-common/proprietary/system_ext/lib64/libdpmfdmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmfdmgr.so \
@@ -230,6 +228,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/system_ext/lib64/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmosal.so \
     vendor/xiaomi/sm8550-common/proprietary/system_ext/lib64/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmparser_lite.so \
     vendor/xiaomi/sm8550-common/proprietary/system_ext/lib64/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpdecoder.so \
+    vendor/xiaomi/sm8550-common/proprietary/system_ext/lib64/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpdecoder.so \
+    vendor/xiaomi/sm8550-common/proprietary/system_ext/lib64/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpencoder.so \
     vendor/xiaomi/sm8550-common/proprietary/system_ext/lib64/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpencoder.so \
     vendor/xiaomi/sm8550-common/proprietary/system_ext/lib64/libmsp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmsp.so \
     vendor/xiaomi/sm8550-common/proprietary/system_ext/lib64/libmwqemiptablemgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmwqemiptablemgr.so \
@@ -273,6 +273,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/system_ext/lib64/vendor.qti.data.mwqem@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.mwqem@1.0.so \
     vendor/xiaomi/sm8550-common/proprietary/system_ext/lib64/vendor.qti.data.mwqemaidlservice-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.mwqemaidlservice-V1-ndk.so \
     vendor/xiaomi/sm8550-common/proprietary/system_ext/lib64/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.slm@1.0.so \
+    vendor/xiaomi/sm8550-common/proprietary/system_ext/lib64/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.diaghal@1.0.so \
     vendor/xiaomi/sm8550-common/proprietary/system_ext/lib64/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.diaghal@1.0.so \
     vendor/xiaomi/sm8550-common/proprietary/system_ext/lib64/vendor.qti.hardware.cacertaidlservice-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.cacertaidlservice-V1-ndk.so \
     vendor/xiaomi/sm8550-common/proprietary/system_ext/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so \
@@ -442,6 +443,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/bin/hw/vendor.qti.media.c2audio@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2audio@1.0-service \
     vendor/xiaomi/sm8550-common/proprietary/vendor/bin/hw/vendor.qti.memory.pasrmanager-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.memory.pasrmanager-service \
     vendor/xiaomi/sm8550-common/proprietary/vendor/bin/hw/vendor.qti.psiclient@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.psiclient@1.0-service \
+    vendor/xiaomi/sm8550-common/proprietary/vendor/bin/hw/vendor.qti.psiclient@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.psiclient@1.0-service \
     vendor/xiaomi/sm8550-common/proprietary/vendor/bin/hw/vendor.qti.secure_element@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.secure_element@1.2-service \
     vendor/xiaomi/sm8550-common/proprietary/vendor/bin/hw/vendor.qti.sla.service@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.sla.service@1.0-service \
     vendor/xiaomi/sm8550-common/proprietary/vendor/bin/hw/vendor.rongcard.hardware.eid@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.rongcard.hardware.eid@1.0-service \
@@ -457,7 +459,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/bin/init.qcom.class_core.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.class_core.sh \
     vendor/xiaomi/sm8550-common/proprietary/vendor/bin/init.qcom.post_boot.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.post_boot.sh \
     vendor/xiaomi/sm8550-common/proprietary/vendor/bin/init.qcom.sensors.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sensors.sh \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/bin/init.qcom.usb.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.usb.sh \
     vendor/xiaomi/sm8550-common/proprietary/vendor/bin/init.qti.kernel.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.kernel.sh \
     vendor/xiaomi/sm8550-common/proprietary/vendor/bin/init.qti.media.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.media.sh \
     vendor/xiaomi/sm8550-common/proprietary/vendor/bin/init.qti.qcv.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.qcv.sh \
@@ -651,7 +652,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/hw/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.batterysecret.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/hw/init.mi_thermald.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mi_thermald.rc \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/hw/init.qcom.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.usb.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/hw/init.qti.kernel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qti.kernel.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/ims-dataservice-daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims-dataservice-daemon.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
@@ -713,6 +713,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2audio@1.0-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.qti.memory.pasrmanager-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.memory.pasrmanager-service.rc \
+    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.qti.psiclient@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.psiclient@1.0-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.qti.psiclient@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.psiclient@1.0-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.qti.qspmhal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
@@ -850,7 +851,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/telephony_packages.xml:$(TARGET_COPY_OUT_VENDOR)/etc/telephony_packages.xml \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/usb_compositions.conf:$(TARGET_COPY_OUT_VENDOR)/etc/usb_compositions.conf \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/vmmgr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/vmmgr.conf \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
@@ -1375,6 +1375,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd-client.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libqti-qesdk-secure.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-qesdk-secure.so \
+    vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libqti-qesdk-secure.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-qesdk-secure.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libqti-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-util.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libqti-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-utils.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libqtigefar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigefar.so \
@@ -1455,6 +1456,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libstandbyfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstandbyfeature.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsubsystem_control.so \
+    vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libswspatializer_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswspatializer_ext.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libsxrservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsxrservice.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libsynergy_loc_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynergy_loc_api.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libsynx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynx.so \
@@ -1462,7 +1464,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysmon_cdsp_skel.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libtestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtestutils.so \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalclient.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libthreadutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthreadutils.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
@@ -1738,8 +1739,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/vendor.xiaomi.hardware.micharge@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.micharge@1.0.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/vendor.xiaomi.hardware.quickcamera@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.quickcamera@1.0.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/vendor.xiaomi.hw.touchfeature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hw.touchfeature@1.0.so \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/vendor.xiaomi.sensor.citsensorservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.sensor.citsensorservice@1.1.so \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/vendor.xiaomi.sensor.citsensorservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.sensor.citsensorservice@2.0.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/vendor.xiaomi.sensor.communicate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.sensor.communicate@1.0.so
 
 PRODUCT_PACKAGES += \
@@ -1949,5 +1948,4 @@ PRODUCT_PACKAGES += \
     manifest_vendor.xiaomi.hardware.mtdservice \
     manifest_vendor.xiaomi.hardware.tidaservice \
     vendor.xiaomi.hw.touchfeature@1.0-service \
-    vendor.xiaomi.sensor.citsensorservice@2.0-service \
     vendor.xiaomi.sensor.communicate@1.0_manifest
